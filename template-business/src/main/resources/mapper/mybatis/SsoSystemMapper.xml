@@ -112,10 +112,10 @@
           a.public_key,
           a.status,
           a.del_flag,
-          b.create_by,
-          b.update_by,
-          b.create_time,
-          b.update_time
+          a.create_by,
+          a.update_by,
+          a.create_time,
+          a.update_time
         FROM sso_system a
         LEFT JOIN sso_user_system b on a.sys_code=b.sys_code AND b.del_flag = 0
         AND b.user_id = #{userId,jdbcType=BIGINT}
@@ -143,10 +143,10 @@
           a.public_key,
           a.status,
           a.del_flag,
-          b.create_by,
-          b.update_by,
-          b.create_time,
-          b.update_time
+          a.create_by,
+          a.update_by,
+          a.create_time,
+          a.update_time
         FROM sso_system a
         INNER JOIN sso_user_system b on a.sys_code=b.sys_code
         WHERE  a.del_flag = 0
