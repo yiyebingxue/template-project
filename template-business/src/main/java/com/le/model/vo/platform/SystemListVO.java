@@ -61,4 +61,33 @@ public class SystemListVO implements Serializable {
 	 */
 	private Integer status;
 
+	/**
+	 * 备注
+	 */
+	private String remarks;
+
+	/**
+	 * 签名类型
+	 */
+	private Integer signType;
+
+	/**
+	 * 网关验签公钥
+	 */
+	private String publicKey;
+
+	private String createBy;
+
+	/**
+	 * 创建时间
+	 */
+	private String createTime;
+
+	private String updateBy;
+
+	/**
+	 * 更新时间
+	 */
+	private String updateTime;
+
 }
